@@ -1,3 +1,4 @@
+uildozer.outputs.filename }}
 name: Build APK with Buildozer
 
 on: [push, workflow_dispatch]
