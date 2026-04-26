@@ -1,0 +1,2 @@
+# paquete IA Core
+

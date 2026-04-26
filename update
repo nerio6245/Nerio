@@ -1,0 +1,2 @@
+def procesar_offline(self, texto):
+    return "⚡ Modo offline: respuesta básica activada"

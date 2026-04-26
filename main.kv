@@ -1,0 +1,57 @@
+RootWidget:
+
+<RootWidget>:
+
+    orientation: "vertical"
+    padding: 15
+    spacing: 10
+    canvas.before:
+        Color:
+            rgba: 0.08, 0.09, 0.12, 1   # fondo oscuro elegante
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    # -------------------------
+    # HEADER / IDENTIDAD
+    # -------------------------
+    Label:
+        text: "🧠 IA CORE SYSTEM"
+        size_hint_y: 0.12
+        font_size: 22
+        bold: True
+        color: 0.8, 0.9, 1, 1
+
+    # -------------------------
+    # CHAT AREA
+    # -------------------------
+    Label:
+        id: chat
+        text: "Sistema activo...\n"
+        size_hint_y: 0.65
+        color: 0.9, 0.9, 0.9, 1
+        text_size: self.width, None
+        halign: "left"
+        valign: "top"
+
+    # -------------------------
+    # INPUT BOX (SUAVE)
+    # -------------------------
+    TextInput:
+        id: user_input
+        size_hint_y: 0.12
+        multiline: False
+        hint_text: "Escribe aquí..."
+        background_color: 0.12, 0.13, 0.18, 1
+        foreground_color: 1, 1, 1, 1
+        cursor_color: 0.4, 0.7, 1, 1
+
+    # -------------------------
+    # BOTÓN ELEGANTE
+    # -------------------------
+    Button:
+        text: "Enviar"
+        size_hint_y: 0.1
+        background_color: 0.2, 0.5, 0.9, 1
+        color: 1, 1, 1, 1
+        font_size: 18

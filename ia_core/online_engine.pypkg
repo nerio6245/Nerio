@@ -1,0 +1,4 @@
+respuesta = self.online_engine.procesar(texto)
+
+if respuesta is None:
+    respuesta = self.procesar_offline(texto)
