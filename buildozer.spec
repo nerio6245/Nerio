@@ -1,4 +1,4 @@
-[app]requirements = python3,kivy==2.3.0,requests
+[app]requirements = python3,kivy==2.2.1,requests
 
 android.permissions = INTERNET
 
@@ -41,7 +41,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy==2.3.0,requests
+requirements = python3,kivy==2.2.1,requests
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
 # requirements.source.kivy = ../../kivy
@@ -104,26 +104,26 @@ fullscreen = 0
 #android.features = android.hardware.usb.host
 
 # (int) Target Android API, should be as high as possible.
-#android.api = 33
+android.api = 34
 
 # (int) Minimum API your APK / AAB will support.
-#android.minapi = 21
+android.minapi = 21
 
 # (int) Android SDK version to use
-#android.sdk = 33
+#android.sdk = 34
 
 # (str) Android NDK version to use
 #android.ndk = 25b
 
-android.sdk_path = /data/data/com.termux/files/home/.buildozer/android/platform/android-sdk
-android.ndk_path = /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r25c
+android.sdk_path = 
+android.ndk_path = 
 # (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
 #android.ndk_api = sd12
 
 # (bool) Use --private data storage (True) or --dir public storage (False)
 #android.private_storage = True
 
-android.skip_update = True
+# android.skip_update = True
 android.accept_sdk_license = True
 
 # (str) Android NDK directory (if empty, it will be automatically downloaded.)
@@ -133,7 +133,7 @@ android.accept_sdk_license = True
 #android.sdk_path =
 
 # (str) ANT directory (if empty, it will be automatically downloaded.)
-#android.ant_path =
+android.ant_path =
 
 # (bool) If True, then skip trying to update the Android sdk
 # This can be useful to avoid excess Internet downloads or save time
