@@ -1,8 +1,8 @@
-[app]requirements = python3,kivy
+[app]requirements = python3,kivy==2.3.0,requests
 
 android.permissions = INTERNET
 
-android.api = 33
+android.api = 34
 android.minapi = 21
 
 # (str) Title of your application
@@ -41,7 +41,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy
+requirements = python3,kivy==2.3.0,requests
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
 # requirements.source.kivy = ../../kivy
@@ -329,7 +329,7 @@ android.allow_backup = True
 #p4a.fork = kivy
 
 # (str) python-for-android branch to use, defaults to master
-#p4a.branch = master
+p4a.branch = stable
 
 # (str) python-for-android specific commit to use, defaults to HEAD, must be within p4a.branch
 #p4a.commit = HEAD
