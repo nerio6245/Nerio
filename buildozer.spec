@@ -1,3 +1,5 @@
+[app]
+
 requirements = python3,kivy==2.2.1,requests
 
 android.permissions = INTERNET
@@ -12,7 +14,7 @@ title = MiIA
 package.name = miia
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.test
+package.domain = org.miia.app
 
 # (str) Source code where the main.py live
 source.dir = .
@@ -41,7 +43,6 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-# requirements = python3,kivy==2.2.1,requests
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
 # requirements.source.kivy = ../../kivy
