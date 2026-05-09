@@ -113,8 +113,8 @@ fullscreen = 0
 # (str) Android NDK version to use
 #android.ndk = 25b
 
-android.sdk_path = 
-android.ndk_path = 
+android.sdk_path =
+android.ndk_path =
 # (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
 #android.ndk_api = sd12
 
@@ -150,8 +150,7 @@ android.ant_path =
 # (str) Full name including package path of the Java class that implements Android Activity
 # use that parameter together with android.entrypoint to set custom Java class instead of PythonActivity
 #android.activity_class_name = org.kivy.android.PythonActivity
-
-# (str) Extra xml to write directly inside the <manifest> element of AndroidManifest.xml
+                                                     # (str) Extra xml to write directly inside the <manifest> element of AndroidManifest.xml
 # use that parameter to provide a filename from where to load your custom XML code
 #android.extra_manifest_xml = ./src/android/extra_manifest.xml
 
@@ -177,12 +176,9 @@ android.ant_path =
 
 # (list) List of Java .jar files to add to the libs so that pyjnius can access
 # their classes. Don't add jars that you do not need, since extra jars can slow
-# down the build process. Allows wildcards matching, for example:
-# OUYA-ODK/libs/*.jar
+# down the build process. Allows wildcards matching, for example:                                         # OUYA-ODK/libs/*.jar
 #android.add_jars = foo.jar,bar.jar,path/to/more/*.jar
-
-# (list) List of Java files to add to the android project (can be java or a
-# directory containing the files)
+                                                     # (list) List of Java files to add to the android project (can be java or a                               # directory containing the files)
 #android.add_src =
 
 # (list) Android AAR archives to add
@@ -190,18 +186,13 @@ android.ant_path =
 
 # (list) Put these files or directories in the apk assets directory.
 # Either form may be used, and assets need not be in 'source.include_exts'.
-# 1) android.add_assets = source_asset_relative_path
-# 2) android.add_assets = source_asset_path:destination_asset_relative_path
-#android.add_assets =
-
-# (list) Put these files or directories in the apk res directory.
-# The option may be used in three ways, the value may contain one or zero ':'
-# Some examples:
+# 1) android.add_assets = source_asset_relative_path # 2) android.add_assets = source_asset_path:destination_asset_relative_path                               #android.add_assets =
+                                                     # (list) Put these files or directories in the apk res directory.                                         # The option may be used in three ways, the value may contain one or zero ':'                             # Some examples:
 # 1) A file to add to resources, legal resource names contain ['a-z','0-9','_']
 # android.add_resources = my_icons/all-inclusive.png:drawable/all_inclusive.png
 # 2) A directory, here  'legal_icons' must contain resources of one kind
 # android.add_resources = legal_icons:drawable
-# 3) A directory, here 'legal_resources' must contain one or more directories, 
+# 3) A directory, here 'legal_resources' must contain one or more directories,
 # each of a resource kind:  drawable, xml, etc...
 # android.add_resources = legal_resources
 #android.add_resources =
@@ -213,21 +204,19 @@ android.ant_path =
 # contains an 'androidx' package, or any package from Kotlin source.
 # android.enable_androidx requires android.api >= 28
 #android.enable_androidx = True
-
-# (list) add java compile options
-# this can for example be necessary when importing certain java libraries using the 'android.gradle_dependencies' option
+                                                     # (list) add java compile options                    # this can for example be necessary when importing certain java libraries using the 'android.gradle_dependencies' option
 # see https://developer.android.com/studio/write/java8-support for further information
 # android.add_compile_options = "sourceCompatibility = 1.8", "targetCompatibility = 1.8"
 
 # (list) Gradle repositories to add {can be necessary for some android.gradle_dependencies}
-# please enclose in double quotes 
+# please enclose in double quotes
 # e.g. android.gradle_repositories = "maven { url 'https://kotlin.bintray.com/ktor' }"
 #android.add_gradle_repositories =
 
-# (list) packaging options to add 
+# (list) packaging options to add
 # see https://google.github.io/android-gradle-dsl/current/com.android.build.gradle.internal.dsl.PackagingOptions.html
 # can be necessary to solve conflicts in gradle_dependencies
-# please enclose in double quotes 
+# please enclose in double quotes
 # e.g. android.add_packaging_options = "exclude 'META-INF/common.kotlin_module'", "exclude 'META-INF/*.kotlin_module'"
 #android.add_packaging_options =
 
@@ -248,23 +237,19 @@ android.ant_path =
 #android.res_xml = PATH_TO_FILE,
 
 # (str) launchMode to set for the main activity
-#android.manifest.launch_mode = standard
-
+#android.manifest.launch_mode = standard             
 # (str) screenOrientation to set for the main activity.
 # Valid values can be found at https://developer.android.com/guide/topics/manifest/activity-element
-#android.manifest.orientation = fullSensor
-
+#android.manifest.orientation = fullSensor           
 # (list) Android additional libraries to copy into libs/armeabi
-#android.add_libs_armeabi = libs/android/*.so
-#android.add_libs_armeabi_v7a = libs/android-v7/*.so
+#android.add_libs_armeabi = libs/android/*.so        #android.add_libs_armeabi_v7a = libs/android-v7/*.so
 #android.add_libs_arm64_v8a = libs/android-v8/*.so
 #android.add_libs_x86 = libs/android-x86/*.so
 #android.add_libs_mips = libs/android-mips/*.so
 
 # (bool) Indicate whether the screen should stay on
 # Don't forget to add the WAKE_LOCK permission if you set this to True
-#android.wakelock = False
-
+#android.wakelock = False                            
 # (list) Android application meta-data to set (key=value format)
 #android.meta_data =
 
@@ -273,12 +258,9 @@ android.ant_path =
 #android.library_references =
 
 # (list) Android shared libraries which will be added to AndroidManifest.xml using <uses-library> tag
-#android.uses_library =
-
-# (str) Android logcat filters to use
-#android.logcat_filters = *:S python:D
-
-# (bool) Android logcat only display log for activity's pid
+#android.uses_library =                              
+# (str) Android logcat filters to use                #android.logcat_filters = *:S python:D
+                                                     # (bool) Android logcat only display log for activity's pid
 #android.logcat_pid_only = False
 
 # (str) Android additional adb arguments
@@ -289,45 +271,26 @@ android.ant_path =
 
 # (list) The Android archs to build for, choices: armeabi-v7a, arm64-v8a, x86, x86_64
 # In past, was `android.arch` as we weren't supporting builds for multiple archs at the same time.
-android.archs = arm64-v8a, armeabi-v7a
-
+android.archs = arm64-v8a, armeabi-v7a               
 # (int) overrides automatic versionCode computation (used in build.gradle)
-# this is not the same as app version and should only be edited if you know what you're doing
-# android.numeric_version = 1
-
-# (bool) enables Android auto backup feature (Android API >=23)
-android.allow_backup = True
-
-# (str) XML file for custom backup rules (see official auto backup documentation)
-# android.backup_rules =
-
-# (str) If you need to insert variables into your AndroidManifest.xml file,
-# you can do so with the manifestPlaceholders property.
-# This property takes a map of key-value pairs. (via a string)
-# Usage example : android.manifest_placeholders = [myCustomUrl:\"org.kivy.customurl\"]
-# android.manifest_placeholders = [:]
-
-# (bool) Skip byte compile for .py files
-# android.no-byte-compile-python = False
-
-# (str) The format used to package the app for release mode (aab or apk or aar).
-# android.release_artifact = aab
-
-# (str) The format used to package the app for debug mode (apk or aar).
+# this is not the same as app version and should only be edited if you know what you're doing             # android.numeric_version = 1
+                                                     # (bool) enables Android auto backup feature (Android API >=23)
+android.allow_backup = True                                                                               # (str) XML file for custom backup rules (see official auto backup documentation)                         # android.backup_rules =                             
+# (str) If you need to insert variables into your AndroidManifest.xml file,                               # you can do so with the manifestPlaceholders property.                                                   # This property takes a map of key-value pairs. (via a string)
+# Usage example : android.manifest_placeholders = [myCustomUrl:\"org.kivy.customurl\"]                    # android.manifest_placeholders = [:]
+                                                     # (bool) Skip byte compile for .py files             # android.no-byte-compile-python = False
+                                                     # (str) The format used to package the app for release mode (aab or apk or aar).                          # android.release_artifact = aab
+                                                     # (str) The format used to package the app for debug mode (apk or aar).
 # android.debug_artifact = apk
-
-#
+                                                     #
 # Python for android (p4a) specific
 #
 
 # (str) python-for-android URL to use for checkout
 #p4a.url =
 
-# (str) python-for-android fork to use in case if p4a.url is not specified, defaults to upstream (kivy)
-#p4a.fork = kivy
-
-# (str) python-for-android branch to use, defaults to master
-p4a.branch = stable
+# (str) python-for-android fork to use in case if p4a.url is not specified, defaults to upstream (kivy)   #p4a.fork = kivy
+                                                     # (str) python-for-android branch to use, defaults to master                                              p4a.branch = stable
 
 # (str) python-for-android specific commit to use, defaults to HEAD, must be within p4a.branch
 #p4a.commit = HEAD
@@ -342,11 +305,9 @@ p4a.branch = stable
 #p4a.hook =
 
 # (str) Bootstrap to use for android builds
-# p4a.bootstrap = sdl2
-
+# p4a.bootstrap = sdl2                               
 # (int) port number to specify an explicit --port= p4a argument (eg for bootstrap flask)
-#p4a.port =
-
+#p4a.port =                                          
 # Control passing the --use-setup-py vs --ignore-setup-py to p4a
 # "in the future" --use-setup-py is going to be the default behaviour in p4a, right now it is not
 # Setting this to false will pass --ignore-setup-py, true will pass --use-setup-py
@@ -361,10 +322,8 @@ p4a.branch = stable
 
 #
 # iOS specific
-#
-
-# (str) Path to a custom kivy-ios folder
-#ios.kivy_ios_dir = ../kivy-ios
+#                                                    
+# (str) Path to a custom kivy-ios folder             #ios.kivy_ios_dir = ../kivy-ios
 # Alternately, specify the URL and branch of a git checkout:
 ios.kivy_ios_url = https://github.com/kivy/kivy-ios
 ios.kivy_ios_branch = master
@@ -377,14 +336,12 @@ ios.ios_deploy_url = https://github.com/phonegap/ios-deploy
 ios.ios_deploy_branch = 1.10.0
 
 # (bool) Whether or not to sign the code
-ios.codesign.allowed = false
-
+ios.codesign.allowed = false                         
 # (str) Name of the certificate to use for signing the debug version
 # Get a list of available identities: buildozer ios list_identities
 #ios.codesign.debug = "iPhone Developer: <lastname> <firstname> (<hexstring>)"
 
-# (str) The development team to use for signing the debug version
-#ios.codesign.development_team.debug = <hexstring>
+# (str) The development team to use for signing the debug version                                         #ios.codesign.development_team.debug = <hexstring>
 
 # (str) Name of the certificate to use for signing the release version
 #ios.codesign.release = %(ios.codesign.debug)s
@@ -396,8 +353,7 @@ ios.codesign.allowed = false
 # This option should be defined along with `display_image_url` and `full_size_image_url` options.
 #ios.manifest.app_url =
 
-# (str) URL pointing to an icon (57x57px) to be displayed during download
-# This option should be defined along with `app_url` and `full_size_image_url` options.
+# (str) URL pointing to an icon (57x57px) to be displayed during download                                 # This option should be defined along with `app_url` and `full_size_image_url` options.
 #ios.manifest.display_image_url =
 
 # (str) URL pointing to a large icon (512x512px) to be used by iTunes
@@ -406,11 +362,9 @@ ios.codesign.allowed = false
 
 
 [buildozer]
-
-# (int) Log level (0 = error only, 1 = info, 2 = debug (with command output))
+                                                     # (int) Log level (0 = error only, 1 = info, 2 = debug (with command output))
 log_level = 2
-
-# (int) Display warning if buildozer is run as root (0 = False, 1 = True)
+                                                     # (int) Display warning if buildozer is run as root (0 = False, 1 = True)
 warn_on_root = 1
 
 # (str) Path to build artifact storage, absolute or relative to spec file
@@ -423,8 +377,7 @@ warn_on_root = 1
 #    List as sections
 #
 #    You can define all the "list" as [section:key].
-#    Each line will be considered as a option to the list.
-#    Let's take [app] / source.exclude_patterns.
+#    Each line will be considered as a option to the list.                                                #    Let's take [app] / source.exclude_patterns.
 #    Instead of doing:
 #
 #[app]
@@ -434,8 +387,7 @@ warn_on_root = 1
 #
 #[app:source.exclude_patterns]
 #license
-#data/audio/*.wav
-#data/images/original/*
+#data/audio/*.wav                                    #data/images/original/*
 #
 
 
@@ -454,5 +406,4 @@ warn_on_root = 1
 #images/hd/*
 #
 #    Then, invoke the command line with the "demo" profile:
-#
-#buildozer --profile demo android debug
+#                                                    #buildozer --profile demo android debug
